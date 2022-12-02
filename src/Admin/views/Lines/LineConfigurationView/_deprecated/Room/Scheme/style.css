@@ -1,0 +1,107 @@
+.scheme__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.scheme__wrapper .progress {
+    height: 10px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.7;
+    top: 75px;
+}
+
+.scheme__control {
+    background: #fff;
+    max-width: 250px;
+    padding: 20px 22px;
+    position: relative;
+}
+
+.scheme__wrapper.grabbingMode div .konvajs-content{
+    box-shadow: 0 0 9px -1px #ffc107;
+}
+
+.konvajs-content {
+    box-shadow: 0 0 4px transparent;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    transition: box-shadow 200ms ease;
+}
+
+.row_control {
+    display: flex;
+    flex-wrap: wrap;
+}
+.collapse-container {
+
+}
+
+.row_control .create-markers__collapse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.row_control:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.control__button.button {
+    transition: All 200ms ease;
+}
+
+@keyframes pulsate {
+    0% { background: #e8e518; }
+    100% { background: none; }
+}
+
+.control__button.button {
+    flex: 1;
+}
+
+.control__button.button.button-grid:hover:not(:disabled),
+.control__button.button.button-grab:hover:not(:disabled),
+.control__button.button.button-default:hover:not(:disabled),
+.control__button.button.button-simple-markers:hover:not(:disabled) {
+    background: transparent;
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.control__button.button.button-grid:active:not(:disabled),
+.control__button.button.button-grab:active:not(:disabled),
+.control__button.button.button-default:active:not(:disabled),
+.control__button.button.button-simple-markers:active:not(:disabled),
+.control__button.button.button-grid.btn-outline-warning.active:hover:not(:disabled),
+.control__button.button.button-simple-markers.btn-outline-warning.active:hover:not(:disabled),
+.control__button.button.button-default.btn-outline-warning.active:hover:not(:disabled),
+.control__button.button.button-grab.btn-outline-warning.active:hover:not(:disabled) {
+    background: #ffc107;
+    color: #000;
+    border-color: #ffc107;
+}
+
+.control__button.button:focus {
+    box-shadow: none !important;
+}
+
+.save-btn__loader {
+    position: absolute;
+    color: #20a8d8;
+}
+
+.control__button.button.button-default-points {
+    margin-top: 0;
+    width: 100%;
+}
+
+.no-bind-alert {
+    position: absolute;
+    bottom: -90px;
+    margin: 0;
+    left: 0;
+}

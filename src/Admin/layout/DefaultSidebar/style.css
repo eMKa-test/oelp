@@ -1,0 +1,19 @@
+.custom-aside__wrapper {
+
+}
+.custom-aside__wrapper {}
+.aside-wrapper {
+    position: relative;
+}
+
+.aside-wrapper {
+    padding: 10px;
+}
+
+.aside-wrapper.empty {
+    text-align: center;
+}
+
+.test-aside.active .nav-item {
+    background: red;
+}

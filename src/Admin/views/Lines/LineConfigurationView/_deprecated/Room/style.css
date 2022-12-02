@@ -1,0 +1,30 @@
+.line__configuration {
+    position: relative;
+}
+
+.scheme__dropzone__wrapper {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scheme__dropzone {
+    position: relative;
+    display: flex;
+    width: 70px;
+    height: 70px;
+}
+
+.dropzone__button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.schemeDropzone {
+    width: 100%;
+    height: 100%;
+}

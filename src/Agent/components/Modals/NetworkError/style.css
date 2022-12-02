@@ -1,0 +1,36 @@
+.agent__modal-network .modal-header {
+    background-color: var(--lightOrangeColor);
+    color: white;
+}
+
+.agent__modal-network .modal-header .modal-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.agent__modal-network .modal-network__submit-button {
+    background-color: var(--whiteColor);
+    color: var(--blueColor);
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--blueColor);
+}
+
+.agent__modal-network .modal-network__submit-button:hover {
+    background-color: var(--darkBlueColor);
+    color: white;
+}
+
+.agent__modal-network .modal-network__submit-button.btn-secondary:not(:disabled):not(.disabled):active {
+    background-color: var(--darkBlueColor);
+    box-shadow: none;
+    border-color: var(--blueColor);
+}
+
+.agent__modal-network .modal-network__submit-button.btn-secondary:not(:disabled):not(.disabled):focus {
+    background-color: var(--darkBlueColor);
+    box-shadow: none;
+    border-color: var(--blueColor);
+}

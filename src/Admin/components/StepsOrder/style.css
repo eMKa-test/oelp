@@ -1,0 +1,100 @@
+.steps-order {
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.arrow-polyline {
+    stroke: #eeff0b;
+    stroke-width: 3px;
+    cursor: default;
+}
+.neighbour-arrow-polyline {
+    stroke: #ff19e1;
+    fill: #ff19e1;
+    stroke-width: 4px;
+    cursor: default;
+}
+.content-route-arrow-polyline {
+    stroke: #eeff0b;
+    stroke-width: 4px;
+    cursor: default;
+}
+
+.marker-arrow-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marker-arrow-index-description,
+.marker-arrow-index-description__active {
+    position: absolute;
+    top: 0;
+    margin-bottom: 0;
+    color: #000000;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    left: 50%;
+}
+
+.marker-arrow-index-description__active {
+    color: white;
+}
+
+
+.step-route-bind {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 10px 10px;
+    background: white;
+    width: 235px;
+    z-index: 400;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 0 calc(0.25rem - 1px);
+}
+
+.step-route-bind .footer {
+    display: flex;
+    padding: 10px 0 0;
+    flex-direction: column;
+}
+
+.step-route-bind .footer .control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step-route-bind .footer .info {
+    flex: 1;
+}
+
+.step-route-bind .footer .info .item {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+.step-route-bind .footer .info .item:not(:first-child) {
+    margin-top: 10px;
+}
+
+.step-route-bind .footer .info .item > span{
+    color: black;
+    line-height: 17px;
+    font-size: 12px;
+}
+
+.step-route-bind .footer .info .item.item__base > i {
+    color: #eeff0b;
+}
+.step-route-bind .footer .info .item.item__priority > i {
+    color: #4fff97;
+}
+.step-route-bind .footer .info .item.item__view > i {
+    color: #ff19e1;
+}

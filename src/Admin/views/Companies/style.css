@@ -1,0 +1,10 @@
+.Admin-Companies {
+    /*height: calc(100vh - 410px);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.FullHeight {
+    height: calc(100vh - 175px);
+}

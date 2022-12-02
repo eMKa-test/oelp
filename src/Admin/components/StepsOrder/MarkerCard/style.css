@@ -1,0 +1,119 @@
+.step-route-bind .card {
+    max-width: 250px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.step-route-bind .card .card-panel-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.step-route-bind .card .card-panel-control .top-control {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+.step-route-bind .card .card-panel-control .btn {
+    flex: 1;
+}
+.step-route-bind .card .card-panel-control .btn.reset {
+    width: 100%;
+}
+.step-route-bind .card .card-title {
+    margin-bottom: 0;
+}
+
+.step-route-bind .card .card-body .dead-end .checkbox-emulate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.step-route-bind .card .card-body .dead-end {
+    padding: 0.375rem 0.6rem;
+}
+.step-route-bind .card .card-body .dead-end .checkbox-emulate > span:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    margin-left: 10px;
+    border-radius: 3px;
+    border: 0.1rem solid #b3ab92;
+    max-width: 19px;
+}
+
+.step-route-bind .card .card-body .dead-end .checkbox-emulate > span .check-icon {
+    color: #4dbd74;
+    transition: visibility 150ms ease, opacity 150ms ease;
+}
+
+.step-route-bind .card .card-body .dead-end .checkbox-emulate > span .check-icon.show-check {
+    opacity: 1;
+    visibility: visible;
+}
+.step-route-bind .card .card-body .dead-end .checkbox-emulate > span .check-icon.hide-check {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.step-route-bind .card-footer {
+    text-align: right;
+}
+
+.step-route-bind .card-body .info-pane {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    background: white;
+}
+
+.panorama-preview__wrapper {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+.panorama-preview__loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.panorama-preview__loader .loader {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+.panorama-preview__loader .loader::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border: 4px dotted #d330e9;
+    padding: 10px;
+    border-radius: 50%;
+    animation: rotationActiveMarker 2000ms linear infinite;
+}
+
+
+.panorama-preview {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes rotationActiveMarker {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}

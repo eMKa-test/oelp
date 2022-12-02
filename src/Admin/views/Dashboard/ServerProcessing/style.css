@@ -1,0 +1,39 @@
+.server-process-status__wrapper {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.server-process-status__wrapper .activity-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.server-process-status__wrapper .activity-title i {
+    animation: rotation 100ms linear infinite;
+    animation-play-state: paused;
+}
+
+.server-process-status__wrapper .activity-title i.active {
+    animation-play-state: running;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(180deg);
+    }
+}
+
+.server-process-status__wrapper .table .activity-header {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.server-process-status__wrapper .table .activity-header .activity-time {
+    font-size: 14px;
+    font-weight: 400;
+}

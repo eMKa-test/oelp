@@ -1,0 +1,27 @@
+.configuration-info__wrapper {
+    padding: 20px 0;
+    background: #0ba5d3;
+}
+
+.configuration-info__wrapper ol > li > ul {
+    padding-left: 5px;
+}
+
+.configuration-info__wrapper ol li.info-item {
+    cursor: pointer;
+}
+
+.configuration-info__wrapper ol > li > ul > li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.configuration-info__wrapper ol > li > ul > li .list-style {
+    margin-right: 10px;
+}
+
+.configuration-info__wrapper ol > li > ul > li .list-icon {
+    margin-right: 10px;
+}

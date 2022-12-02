@@ -1,0 +1,56 @@
+:root {
+    --darkGreenColor: #48b289;
+    --greenColor: #65e4b3;
+    --lightGreenColor: #97f5ce;
+    --lighterGreenColor: #b1f3d4;
+    --darkYellowColor: #d7cd32;
+    --yellowColor: #f3e83a;
+    --lightYellowColor: #fff88e;
+    --fireYellowColor: #fff8e6;
+    --opacityYellowColor: #f1edec;
+    --darkBlueColor: #0b81cc;
+    --blueColor: #0f9cfa;
+    --lightBlueColor: #87bbf3;
+    --lighterBlueColor: #b9e0fd;
+    --opacityBlueColor: #d9ecfc;
+    --opacityLightBlueColor: #ecf6ff;
+    --darkOrangeColor: #be5d38;
+    --orangeColor: #ff814b;
+    --lightOrangeColor: #ff9263;
+    --lighterOrangeColor: #ffb69c;
+    --opacityOrangeColor: #fcc8b9;
+    --darkGreyColor: #808182;
+    --darkerGreyColor: #bdbdbd;
+    --softGreyColor: #d0d0d0;
+    --greyColor: #ecedf1;
+    --lightColor: #f9f9f9;
+    --whiteColor: #ffffff;
+    --blackColor: #2c2d2f;
+    --redColor: red;
+}
+
+.dropzone * {
+    user-select: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+.Toastify__toast--info {
+    background-color: var(--darkBlueColor);
+}
+
+.Toastify__toast--error {
+    background-color: var(--orangeColor);
+}
+
+.error-color {
+    color: var(--redColor)
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,47 @@
+.PicketMap {
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.PicketMap__map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.PicketInput {
+    padding: 12px 8px;
+    z-index: 401;
+    position: absolute;
+    top: 0;
+    left: 42%;
+    right: 42%;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: right;
+}
+
+.picket-marker__popup .leaflet-popup-content {
+    margin: 5px 11px;
+}
+
+.picket-marker__tooltip__description {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: white;
+}
+
+.picket-marker.leaflet-tooltip {
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+.picket-marker.leaflet-tooltip:before {
+    display: none;
+}

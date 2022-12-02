@@ -1,0 +1,41 @@
+.control-panel__wrapper {
+    display: flex;
+}
+
+.chunk-mode__button {
+    padding: 0.375rem 0.3rem !important;
+}
+
+.theme__simple .chunk-mode__button {
+    background-color: var(--greyColor) !important;
+    border-color: var(--greyColor) !important;
+}
+
+.theme__warning .chunk-mode__button {
+    background-color: var(--opacityYellowColor) !important;
+    border-color: var(--opacityYellowColor) !important;
+}
+
+.chunk-mode__button:hover {
+    background-color: var(--lightColor) !important;
+}
+
+.chunk-mode__button .fa {
+    color: var(--blueColor);
+}
+
+.chunk-mode__button img {
+    vertical-align: middle;
+    display: inline-block;
+    width: 32px;
+}
+
+.chunk-mode__button input {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.chunk-mode__button:active,
+.chunk-mode__button:focus {
+    box-shadow: none !important;
+}

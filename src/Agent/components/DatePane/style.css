@@ -1,0 +1,10 @@
+.date-pane__wrapper {
+    margin-left: 10px;
+}
+
+.date-pane__wrapper input {
+    border-color: var(--blueColor);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 2px var(--blueColor)
+}

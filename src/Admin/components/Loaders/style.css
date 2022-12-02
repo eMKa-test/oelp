@@ -1,0 +1,27 @@
+.Loader-container {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    z-index: 401;
+    display: flex;
+    background: rgba(250, 250, 250, 0.8);
+    align-items: center;
+    justify-content: center;
+    transition: visibility 100ms, opacity 100ms;
+}
+
+.Loader-container.stick-to-top {
+    top: 0;
+}
+
+.loader-hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-show {
+    opacity: 1;
+    visibility: visible;
+}

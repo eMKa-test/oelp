@@ -1,0 +1,86 @@
+.agent__modal-confirm .modal-header {
+    background-color: var(--blueColor);
+    color: white;
+}
+
+.agent__modal-confirm.status__warning .modal-header {
+    background-color: var(--lightOrangeColor);
+    color: white;
+}
+
+.agent__modal-confirm.status__warning .modal-body {
+    font-size: 18px;
+}
+
+.agent__modal-confirm .modal-confirm__cancel-button {
+    background-color: var(--whiteColor);
+    border: 1px solid var(--blueColor);
+    color: var(--blueColor);
+    outline: none;
+    box-shadow: none;
+}
+
+.agent__modal-confirm.status__warning .modal-confirm__cancel-button {
+    color: var(--blueColor);
+    background-color: var(--whiteColor);
+}
+
+.agent__modal-confirm .modal-confirm__cancel-button:hover {
+    background-color: var(--greyColor);
+    color: var(--blueColor) !important;
+    border-color: var(--blueColor);
+}
+
+.agent__modal-confirm.status__warning .modal-confirm__cancel-button:hover {
+    background-color: var(--darkBlueColor);
+    color: var(--whiteColor);
+}
+
+.agent__modal-confirm .modal-confirm__submit-button {
+    background-color: var(--blueColor);
+    color: var(--whiteColor);
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--blueColor);
+}
+
+.agent__modal-confirm.status__warning .modal-confirm__submit-button {
+    background-color: var(--lightOrangeColor);
+    border: 1px solid var(--lightOrangeColor);
+}
+
+.agent__modal-confirm .modal-confirm__submit-button:hover {
+    background-color: var(--darkBlueColor);
+    color: white;
+}
+
+.agent__modal-confirm.status__warning .modal-confirm__submit-button:hover {
+    background-color: var(--darkOrangeColor);
+}
+
+
+.agent__modal-confirm .modal-confirm__cancel-button.btn-secondary:not(:disabled):not(.disabled):active {
+    background-color: var(--darkBlueColor) !important;
+    box-shadow: none;
+    border-color: var(--blueColor);
+    color: var(--whiteColor) !important;
+}
+
+.agent__modal-confirm .modal-confirm__cancel-button.btn-secondary:not(:disabled):not(.disabled):focus {
+    background-color: var(--whiteColor);
+    color: var(--blueColor);
+    box-shadow: none;
+    border-color: var(--blueColor);
+}
+
+.agent__modal-confirm .modal-confirm__submit-button.btn-secondary:not(:disabled):not(.disabled):active {
+    background-color: var(--darkBlueColor);
+    box-shadow: none;
+    border-color: var(--blueColor);
+}
+
+.agent__modal-confirm .modal-confirm__submit-button.btn-secondary:not(:disabled):not(.disabled):focus {
+    background-color: var(--darkBlueColor);
+    box-shadow: none;
+    border-color: var(--blueColor);
+}

@@ -1,0 +1,76 @@
+:root {
+    --headerHeight: 4.225rem;
+    --leftGutter: 0.5rem;
+    --passiveTextColor: rgb(204, 204, 204);
+    --bgMain: rgba(235, 235, 235, 1);
+    --colorTitle: rgba(78,78,78,1);
+    --colorTextForm: rgba(78,78,78,1);
+    --bgTextForm: rgba(245, 245, 245, 1);
+    --bgForm: rgba(235, 235, 235, 1);
+    --borderTextForm: rgb(220, 220, 220);
+    --bgSubmitButton: rgba(101,151,226,1);
+    --secondaryColor: rgba(101,151,226,1);
+    --primaryColor: rgba(78,78,78,1);
+    --colorSubmitButton: rgba(245, 245, 245, 1);
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body, html {
+    font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, Ubuntu, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--bgMain);
+    color: var(--primaryColor);
+}
+
+.terms-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.terms-header {
+    background: var(--bgMain);
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid var(--secondaryColor);
+}
+
+.terms-header__logo {
+    margin: 10px 0;
+    width: 200px;
+}
+
+.terms-main {
+    flex: 1;
+    padding: 0 1.2rem;
+    margin: 2rem auto;
+    max-width: 980px;
+}
+
+.terms-main p {
+    text-align: justify;
+}
+
+.terms-main a {
+    color: var(--secondaryColor);
+}
+
+.terms-main h1 {
+    /*margin-top: 0;*/
+    text-align: center;
+}
+
+.terms-footer {
+    text-align: center;
+    border-top: 3px solid var(--secondaryColor);
+}

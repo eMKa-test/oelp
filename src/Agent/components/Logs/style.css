@@ -1,0 +1,26 @@
+
+.hanged-uploads__button {
+    position: relative;
+    padding: 0 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background: transparent;
+    transition: background-color 50ms ease;
+}
+
+.hanged-uploads__button:hover {
+    background: var(--lightColor);
+}
+
+.hanged-uploads__button .fa {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    display: block;
+    color: var(--blueColor);
+}
+
+.hanged-uploads__badge.active {
+    transform: scale(1);
+}

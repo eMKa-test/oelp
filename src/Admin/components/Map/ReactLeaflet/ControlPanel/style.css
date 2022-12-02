@@ -1,0 +1,38 @@
+.control-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 190px;
+    transition: background 150ms ease;
+}
+
+.control-panel:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+
+.control-panel .submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.control-panel .submit button {
+    flex: 1;
+}
+
+.control-panel .bind-markers {
+    width: 100%;
+}
+
+.control-panel .bind-markers label {
+    width: 100%;
+    cursor: pointer;
+}

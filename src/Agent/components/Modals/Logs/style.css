@@ -1,0 +1,136 @@
+.agent__modal-logs .modal-header {
+    background-color: var(--blueColor);
+    color: white;
+}
+
+.logs-list__wrapper {
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.log-item__header .upload-time {
+    font-size: 12px;
+}
+
+.log-item__wrapper {
+    border-bottom: 1px solid #bbb;
+}
+
+.agent__modal-logs .modal-body .logs-empty {
+    margin: 0;
+    text-align: center;
+}
+
+.agent__modal-logs .modal-logs__close-button {
+    background-color: var(--blueColor);
+    color: var(--whiteColor);
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--blueColor);
+}
+
+.agent__modal-logs .modal-logs__close-button {
+    background-color: var(--blueColor);
+    color: var(--whiteColor);
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--blueColor);
+}
+
+.agent__modal-logs .modal-logs__close-button:hover {
+    background-color: var(--darkBlueColor);
+}
+
+.agent__modal-logs .modal-logs__close-button.btn-secondary:not(:disabled):not(.disabled):active {
+    background-color: var(--darkBlueColor);
+    box-shadow: none;
+    border-color: var(--blueColor);
+}
+
+.agent__modal-logs .modal-logs__close-button.btn-secondary:not(:disabled):not(.disabled):focus {
+    background-color: var(--blueColor);
+    box-shadow: none;
+    border-color: var(--blueColor);
+}
+
+.agent__modal-logs .log-item__wrapper .log-item__body {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.agent__modal-logs .log-item__wrapper .log-item__header {
+    padding: 0.25rem 0.35rem 0.25rem 0;
+    background-color: var(--whiteColor);
+    transition: background-color 100ms ease;
+}
+
+.agent__modal-logs .log-item__wrapper .log-item__header .header__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.agent__modal-logs .log-item__wrapper .log-item__header:hover,
+.agent__modal-logs .log-item__wrapper .log-item__header.opened {
+    background-color: var(--opacityBlueColor);
+}
+
+.agent__modal-logs .log-item__wrapper .log-item__header .header__button .right-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.agent__modal-logs .log-item__wrapper .log-item__header .header__button .right-col span {
+    margin-right: 8px;
+}
+
+.agent__modal-logs .log-item__wrapper .log-item__body .info {
+    padding: 0 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #ccc;
+    align-items: center;
+    background-color: var(--opacityLightBlueColor);
+    transition: background-color 100ms ease;
+    z-index: 2;
+}
+
+.agent__modal-logs .log-item__wrapper .log-item__body .preview {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    opacity: 0.2;
+    z-index: 0;
+    object-fit: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
+
+.agent__modal-logs .log-item__wrapper .log-item__body .error-message__wrapper .info {
+    background-color: var(--opacityOrangeColor);
+}
+
+.agent__modal-logs .log-item__wrapper .log-item__body .error-message__wrapper .info .value {
+    width: 70%;
+    overflow-x: auto;
+}
+
+.agent__modal-logs .log-item__wrapper .log-item__body .error-message__wrapper .info .value:not(pre) {
+    text-align: right;
+}
+
+.logs-list__wrapper .log-item__wrapper .log-item__body .info:hover {
+    background-color: var(--opacityBlueColor);
+}
+
+.agent__modal-logs .log-item__wrapper .log-item__body .error-message__wrapper .info:hover {
+    background-color: var(--lighterOrangeColor);
+}
+

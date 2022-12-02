@@ -1,0 +1,50 @@
+.line-row__wrapper {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--whiteColor);
+}
+
+.line-row__header {
+    display: flex;
+    width: 100%;
+    margin-left: 8px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.35rem;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 150ms ease;
+}
+
+.control .btn-outline-delete-line {
+    border-color: var(--orangeColor) !important;
+    color: var(--orangeColor) !important;
+}
+
+.line-info .control .btn-outline-delete-line:hover {
+    background-color: var(--orangeColor) !important;
+    color: var(--whiteColor) !important;
+}
+
+.line-row__header span.title {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.theme__simple .line-row__header span {
+    color: var(--blueColor) !important;
+}
+
+.theme__warning .line-row__header span {
+    color: var(--darkYellowColor) !important;
+}
+
+.uploads {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}

@@ -1,0 +1,38 @@
+.room-correct__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+}
+
+.konva-container {
+    border: 2px solid black;
+}
+
+.room-correct__zoom-mode {
+    display: flex;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.room-correct__control {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.room-correct__save-btn,
+.room-correct__cancel-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save-btn__loader {
+    position: absolute;
+    color: #20a8d8;
+}

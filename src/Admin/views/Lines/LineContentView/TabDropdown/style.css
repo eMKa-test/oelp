@@ -1,0 +1,19 @@
+.tabs__dropdown-item__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs__dropdown-item__body .dropdown-item-sign > i {
+    color: #20a8d8;
+    margin: 0 0 0 10px;
+}
+
+.tabs__dropdown-item.disable {
+    color: #a4a4a4;
+    background-color: #f4f4f4;
+}
+
+.tabs__dropdown-item.disable .dropdown-item-sign > i {
+    color: #c4c4c4;
+}

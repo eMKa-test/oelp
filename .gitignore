@@ -1,0 +1,13 @@
+.idea/
+.vscode/
+.temp_cache/
+node_modules/
+public_html/
+
+.editorconfig
+
+
+!.env.default
+.env.*
+
+*.DS_Store

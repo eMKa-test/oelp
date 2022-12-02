@@ -1,0 +1,120 @@
+
+.notification__button__bellClapper {
+    fill: var(--blueColor);
+    transition: fill 2000ms;
+}
+
+.notification__button__bell {
+    fill: var(--blueColor);
+    transition: fill 200ms;
+}
+
+.notification__button {
+    position: relative;
+    padding: 0 10px;
+    margin-right: 5px;
+    background: transparent;
+    border-radius: 50%;
+    transition: background-color 50ms ease;
+}
+
+.notification__button:hover {
+    background: var(--lightColor);
+}
+
+.notification__button:hover .notification__button__bell,
+.notification__button:hover .notification__button__bellClapper {
+    fill: var(--blueColor);
+}
+
+.notification__button svg {
+    width: 24px;
+    height: 24px;
+}
+
+.notification__button__bell {
+    animation: bell 800ms ease-in;
+    animation-iteration-count: 3;
+    transform-origin: 50% 0;
+    animation-play-state: paused;
+}
+
+.notification__button__bellClapper {
+    animation: bellClapper 800ms 0.1s ease-in;
+    animation-iteration-count: 3;
+    animation-play-state: paused;
+}
+
+.notification__button.active .notification__button__bell,
+.notification__button.active .notification__button__bellClapper {
+    animation-play-state: running;
+}
+
+.notification__badge {
+    position: absolute;
+    top: 10%;
+    left: 54%;
+    font-size: 10px;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    font-weight: bold;
+    background-color: var(--orangeColor);
+    color: var(--greyColor);
+    text-align: center;
+    line-height: 19px;
+    transform: scale(0);
+    transition: transform 200ms;
+}
+
+.notification__badge.active {
+    transform: scale(1);
+}
+
+@keyframes bell {
+    0%, 25%, 75%, 100% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+    65% {
+        transform: rotate(-5deg);
+    }
+    70% {
+        transform: rotate(1deg);
+    }
+    75% {
+        transform: rotate(-1deg);
+    }
+}
+
+@keyframes bellClapper {
+    0%, 25%, 75%, 100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-1em);
+    }
+    50% {
+        transform: translateX(1em);
+    }
+    60% {
+        transform: translateX(-0.5em);
+    }
+    65% {
+        transform: translateX(0.5em);
+    }
+    70% {
+        transform: translateX(-0.1em);
+    }
+    75% {
+        transform: translateX(0em);
+    }
+}

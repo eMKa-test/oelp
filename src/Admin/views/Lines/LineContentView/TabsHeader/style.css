@@ -1,0 +1,108 @@
+.tab-aside-panel__wrapper {
+    position: absolute;
+    top: 0;
+    align-items: center;
+    height: 100%;
+    right: 0;
+    display: flex;
+}
+
+.aside-button-toggle-date {
+    margin-right: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+
+.tmp-gps__button,
+.calendar-toggle {
+    display: flex;
+    min-width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tmp-gps__button i {
+    margin-top: 3px !important;
+}
+.calendar-toggle i {
+    margin-top: 0 !important;
+}
+
+button.tmp-gps__button,
+button.tmp-gps__button:focus,
+button.calendar-toggle,
+button.calendar-toggle:focus {
+    box-shadow: none;
+}
+
+button.tmp-gps__button:focus,
+button.tmp-gps__button:active,
+button.calendar-toggle:focus,
+button.calendar-toggle:active {
+    background-color: #20a8d8;
+    color: white;
+}
+
+
+.tab-aside-panel {
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    max-height: 630px;
+    z-index: 1019;
+    background: white;
+    border: 1px solid #c8ced3;
+    transition: 200ms right;
+}
+.aside_show {
+    right: -30px;
+}
+.aside_hide {
+    right: -384px;
+}
+
+.tmp-gps__container {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    border: 2px solid #c8ced3;
+    width: 350px;
+    transition: right 200ms ease;
+    z-index: 1019;
+    background: #fff;
+    padding: 10px;
+}
+
+.tmp-gps__container.show {
+    right: -30px;
+}
+.tmp-gps__container.hide {
+    right: -384px;
+}
+
+.tmp-gps__container__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tmp-gps__control {
+    margin-bottom: 10px;
+}
+
+.tmp-gps__submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tmp-gps__submit button {
+    width: 20%;
+}
+
+.tmp-gps__remove {
+    margin-right: 20px;
+}
+

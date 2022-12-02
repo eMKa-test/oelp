@@ -1,0 +1,347 @@
+.card-progress__wrapper {
+    position: absolute;
+    /*right: 0;*/
+    left: 0;
+    border-radius: 0 5px 0 0;
+    width: 420px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    transition: bottom 150ms ease;
+}
+
+.card-progress__wrapper.show {
+    bottom: 0;
+}
+
+.card-progress__wrapper.hide {
+    bottom: -30vmax;
+}
+
+.card-progress .header {
+    height: 56px;
+    border-bottom: 4px solid var(--lightBlueColor);
+    overflow: hidden;
+    background-color: var(--blueColor);
+    color: var(--whiteColor);
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.card-progress .header.network-error {
+    background-color: var(--lighterOrangeColor);
+    color: #c24c4c;
+}
+
+.card-progress .header .all-files__count {
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.card-progress .header .status-progress {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    opacity: 0.4;
+    background: var(--lightGreenColor);
+    transition: width 200ms ease;
+}
+
+.card-progress .header .status-phase {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    margin-left: 7px;
+}
+
+.card-progress .header .status-phase .status-phase__title {
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+    transition: color 100ms ease;
+}
+
+.card-progress .header .end-title {
+    font-weight: 500;
+    margin-left: 7px;
+}
+
+.card-progress .header .registration-phase {
+    margin-left: 8px;
+}
+
+.card-progress .header .status-phase .status-phase__progress {
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+}
+
+.card-progress .header .top-control {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.card-progress .header .start-upload__button,
+.card-progress .header .close-requests__button,
+.card-progress .header .retry-upload__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.375rem 0.25rem 7px;
+    margin: 0 8px;
+    background-color: var(--whiteColor);
+    color: var(--blueColor);
+    border-radius: 0 5px 0 0;
+    font-size: 16px;
+    font-weight: 700;
+    transition: color 150ms ease, background 150ms ease;
+}
+
+.card-progress .header .start-upload__button {
+    margin-left: 8px;
+    padding: 0.5rem;
+}
+
+.card-progress .header .retry-upload__button {
+    padding: 0.25rem 0.375rem;
+}
+
+.card-progress .header .network-error__message {
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.card-progress .header .start-upload__button .fa,
+.card-progress .header .close-requests__button .fa {
+    margin-left: 15px;
+}
+
+.card-progress .header .start-upload__button:not(:disabled):hover,
+.card-progress .header .close-requests__button:hover {
+    background-color: var(--opacityBlueColor);
+}
+
+.card-progress .header .top-control .toggle-slide__button {
+    color: var(--whiteColor);
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 150ms ease;
+}
+
+
+.card-progress .header .top-control .cancel-requests__button {
+    color: var(--whiteColor);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: background 150ms ease;
+}
+
+.card-progress .header .top-control .toggle-slide__button i {
+    transform: rotate(180deg);
+    transition: transform 150ms ease;
+}
+
+.card-progress .header .top-control .toggle-slide__button.show i {
+    transform: rotate(0deg);
+}
+
+.card-progress .header .top-control .toggle-slide__button:hover,
+.card-progress .header .top-control .cancel-requests__button:not(:disabled):hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.card-progress .body {
+    background-color: var(--whiteColor);
+    max-height: 30vmax;
+    min-height: 30vmax;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.card-progress .body .uploading-file__wrapper {
+    border-bottom: 1px solid var(--lightBlueColor);
+}
+
+.card-progress .body .card-files__wrapper .set-upload__header {
+    padding: 8px 14px;
+    background: var(--blueColor);
+    color: var(--whiteColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    transition: background 100ms ease;
+}
+
+.card-progress .body .card-files__wrapper .set-upload__header.failure {
+    background: var(--lighterOrangeColor);
+}
+
+.card-progress .body .card-files__wrapper .set-upload__header .register-failure {
+    display: flex;
+    align-items: center;
+}
+
+.card-progress .body .card-files__wrapper .set-upload__header .info {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+}
+
+.card-progress .body .card-files__wrapper .set-upload__header .line-title,
+.card-progress .body .card-files__wrapper .set-upload__header .content-type {
+    display: block;
+    max-width: 46%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-progress .body .card-files__wrapper .set-upload__header .content-type {
+    margin-left: 10px;
+}
+
+.card-item__row {
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+}
+
+.card-item__row .status-upload__col {
+    display: flex;
+    align-items: center;
+}
+
+.card-item__row .file-icon {
+    width: 40px;
+    position: relative;
+}
+
+.card-item__row .file-icon .uploaded-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 150ms ease, opacity 150ms ease;
+}
+
+.card-item__row .file-icon .uploaded-icon.success {
+    background: var(--greenColor);
+    border: 3px solid var(--whiteColor);
+}
+
+.card-item__row .file-icon .uploaded-icon.canceled {
+    background: var(--whiteColor);
+    border: 3px solid var(--whiteColor);
+}
+
+.card-item__row .file-icon .uploaded-icon.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-item__row .file-icon .uploaded-icon > i {
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--whiteColor);
+}
+
+.card-item__row .file-icon .uploaded-icon > i.fa-ban {
+    color: var(--orangeColor);
+}
+
+.card-item__row .file-icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.card-item__row .card-item__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 6px;
+    flex: 1;
+}
+
+.card-item__row .card-item__info .card-item__title {
+    font-size: 13px;
+}
+
+.card-item__row .card-item__info .card-item__size {
+    font-size: 12px;
+    color: var(--darkGreyColor);
+}
+
+.card-item__row .card-item__progress {
+    position: relative;
+    border-radius: 6px;
+    height: 4px;
+    overflow: hidden;
+    width: 85px;
+    background: var(--softGreyColor);
+}
+
+.card-item__row .card-item__progress .progress-status {
+    height: 4px;
+    background: var(--blueColor);
+    transition: width 200ms ease-in-out;
+}
+
+.card-item__row .card-item__cancel {
+
+}
+
+.card-item__cancel .cancel-upload__button {
+    padding: 0;
+}
+
+.card-item__cancel .cancel-upload__button .fa {
+    color: var(--darkerGreyColor);
+}
+
+.card-item__cancel .cancel-upload__button:hover .fa {
+    color: var(--blackColor) !important;
+}
+
+.card-item__row .card-item__cancel i {
+    color: var(--greyColor);
+}
+
+.card-item__row .cancelled-title {
+    color: var(--lightOrangeColor);
+    font-size: 14px;
+}
+
+.card-item__row .card-item__upload-status .retry-upload__button {
+    color: var(--blueColor);
+}
+
+.card-item__row .card-item__upload-status .status-title {
+    color: var(--greenColor);
+    font-size: 14px;
+}

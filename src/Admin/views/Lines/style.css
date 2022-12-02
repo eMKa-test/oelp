@@ -1,0 +1,27 @@
+.nav-tabs .nav-link.active {
+    border-right: none;
+    color: #20a8d8 !important;;
+}
+
+.content-tab__link,
+.config-tab__link {
+    font-weight: 600;
+}
+
+.content-tab__dropdown-button button {
+    border-bottom: none;
+    border-left: none;
+    background: white;
+    border-radius: 0 0.25rem 0 0;
+    border-top: 1px solid #c8ced3;
+    border-right: 1px solid #c8ced3;
+    transition: All 150ms ease;
+}
+
+.content-tab__dropdown-button > button:hover,
+.content-tab__dropdown-button > button:focus,
+.content-tab__dropdown-button > button:active {
+    color: #0ba5d3 !important;
+    background-color: white !important;
+    box-shadow: none !important;
+}

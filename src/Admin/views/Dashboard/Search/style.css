@@ -1,0 +1,34 @@
+.search-panel {
+    display: flex;
+    justify-items: flex-start;
+}
+
+@media only screen and (max-width: 550px) {
+    .search-panel .input-group {
+        justify-content: center;
+    }
+    .search-panel {
+        justify-content: center;
+    }
+}
+
+.rc-select-customize {
+    width: 70%;
+}
+.rc-select-customize .rc-select-selection {
+    height: 100%;
+}
+.search-type {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.search-type_selected {
+    /*color: white;*/
+}
+.rc-select__option-description {
+    font-size: 12px;
+    color: #979494;
+    margin: 0;
+    padding: 0;
+}

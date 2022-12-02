@@ -1,0 +1,36 @@
+.collapsed__wrapper {
+    flex: 1;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.collapsed__wrapper .collapse-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.25rem;
+    background-color: white;
+    padding: 0.25rem 0.5rem;
+}
+
+.caret {
+    display: block;
+    color: black;
+    transition: color 150ms ease;
+}
+
+.collapsed__wrapper .collapse-button:hover .caret {
+    color: #7dd7fd;
+}
+
+.caret.show {
+    transform: rotateZ(0);
+}
+
+.caret.hide {
+    transform: rotateZ(180deg);
+}
+.collapsed-body {
+    padding: 0.25rem 0.75rem;
+}

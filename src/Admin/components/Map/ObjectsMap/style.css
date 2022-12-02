@@ -1,0 +1,66 @@
+.object-map__wrapper {
+    position: relative;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+#map {
+    height: 100%;
+}
+
+.object-marker-index-description .marker-index-hide {
+    background: transparent;
+}
+
+.object-marker-index-description .marker-index-show {
+    background: white;
+}
+
+.object-marker-custom__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.object-marker__name .leaflet-popup-content-wrapper .leaflet-popup-content .object-name {
+    display: block;
+    font-weight: 600;
+}
+
+.object-marker {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    border-radius: 50%;
+    border: 8px solid #57b1ee;
+    width: 27px;
+    height: 27px;
+    transform: translateX(-50%);
+}
+
+.object-marker__description {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+.object-marker__triangle {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 13px solid transparent;
+    border-top: 27px solid #57b1ee;
+}

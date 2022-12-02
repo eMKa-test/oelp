@@ -1,0 +1,32 @@
+.promo-uploads-row {
+    padding: 0 10px;
+}
+
+.promo-uploads-row .promo-uploads__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.promo-uploads__body {
+    padding: 0;
+}
+
+.promo-title {
+    background-color: var(--greyColor) !important;
+    padding: 0;
+}
+
+.promo-title .title {
+    color: var(--blueColor) !important;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 38px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.promo-title:hover {
+    background-color: var(--whiteColor) !important;
+}
+

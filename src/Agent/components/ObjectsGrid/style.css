@@ -1,0 +1,60 @@
+.objects-grid__wrapper {
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    background-color: var(--whiteColor);
+    transition: background-color 100ms ease;
+}
+
+.theme__simple .objects-grid__wrapper {
+    border-color: var(--lighterBlueColor);
+}
+
+.theme__warning .objects-grid__wrapper {
+    border-color: var(--darkYellowColor);
+}
+
+.theme__simple .objects-grid__wrapper:not(.collapsed):hover {
+    background-color: var(--opacityLightBlueColor);
+}
+
+.theme__warning .objects-grid__wrapper:not(.collapsed):hover {
+    background-color: var(--fireYellowColor);
+}
+
+.theme__simple .objects-grid__wrapper .object-button.collapsed {
+    background-color: var(--opacityLightBlueColor);
+}
+
+.theme__warning .objects-grid__wrapper .object-button.collapsed {
+    background-color: var(--fireYellowColor);
+}
+
+.objects-grid__wrapper .object-button {
+    width: 100%;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.objects-grid__wrapper .object-button .title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.theme__simple .objects-grid__wrapper .object-button {
+    color: var(--blueColor);
+}
+
+.theme__warning .objects-grid__wrapper .object-button {
+    color: var(--darkYellowColor);
+}
+
+.objects-grid__wrapper .lines-empty {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--lightOrangeColor);
+    padding: 8px 20px;
+}

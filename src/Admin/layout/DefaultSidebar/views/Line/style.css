@@ -1,0 +1,75 @@
+.panorama-correct-info__wrapper {
+
+}
+
+.panorama-correct-info__wrapper .title,
+.gps-info__wrapper .title {
+    margin-bottom: 10px;
+}
+
+.gps-info__wrapper .body .info-list {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.panorama-correct-info__wrapper .body {
+
+}
+
+.panorama-correct-info__wrapper .body .toggle-mouse-control {
+    position: relative;
+}
+
+.panorama-correct-info__wrapper .body .toggle-mouse-control .status {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    transition: background 150ms ease-in;
+}
+
+.panorama-correct-info__wrapper .body .toggle-mouse-control,
+.panorama-correct-info__wrapper .body .toggle-mouse-control:active,
+.panorama-correct-info__wrapper .body .toggle-mouse-control:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.panorama-correct-info__wrapper .body .toggle-mouse-control:focus {
+    background-color: #20a8d8;
+}
+
+.panorama-correct-info__wrapper .body .toggle-mouse-control .status.enable {
+    background: lime;
+}
+
+.panorama-correct-info__wrapper .body .toggle-mouse-control .status.disable {
+    background: red;
+}
+
+.panorama-correct-info__wrapper .body .field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.panorama-correct-info__wrapper .body .field .fa {
+    margin-right: 15px;
+    color: #d7f4ff;
+}
+
+.panorama-correct-info__wrapper .body .field .info-button {
+    background: #3d3d3d;
+    border: 6px outset #444444;
+    border-radius: 3px;
+    padding: 0 6px;
+    text-align: center;
+    width: 68px;
+    color: #d7f4ff;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: inset 0 0 3px 0 #323232;
+}

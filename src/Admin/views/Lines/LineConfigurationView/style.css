@@ -1,0 +1,29 @@
+.configuration__wrapper .card{
+    margin-bottom: 0;
+}
+
+.collapse-toggler {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    outline: none;
+    border: none;
+}
+
+.collapse-toggler:active,
+.collapse-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: #20a8d8;
+}
+
+.collapse-icon {
+    transition: transform 350ms ease;
+}
+
+.collapse-icon_active {
+    transform: rotateZ(180deg);
+}

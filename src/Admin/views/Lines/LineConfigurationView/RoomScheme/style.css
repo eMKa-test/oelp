@@ -1,0 +1,18 @@
+.room-scheme__body {
+    position: relative;
+    margin-top: 15px;
+}
+
+
+.scheme__dropzone__wrapper {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.room-scheme__body .empty-schemes {
+    display: block;
+    text-align: center;
+    margin: 8px 0;
+}

@@ -1,0 +1,66 @@
+.PersonPanel .dropdown > button {
+    background-color: white;
+    color: #23282c;
+}
+
+.PersonPanel .dropdown > .dropdown-button:after {
+    display: inline-block;
+}
+
+.PersonPanel .dropdown > button:hover {
+    background-color: #eeeeee;
+    color: #23282c;
+}
+
+.PersonPanel .dropdown > button:hover:active,
+.PersonPanel .dropdown > button:active,
+.PersonPanel .dropdown > button:focus {
+    background-color: #eeeeee !important;
+    color: #23282c;
+}
+
+.PersonPanel .dropdown > button,
+.PersonPanel .dropdown > button:focus,
+.PersonPanel .dropdown > button:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.desktop-toggler {
+    display: inline-block;
+}
+.tablet-toggler {
+    display: none;
+}
+
+a.AppSidebarToggler {
+    display: flex;
+    width: 200px;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+a.AppSidebarToggler img {
+    object-fit: contain;
+    margin-left: 8px;
+    height: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+    a.AppSidebarToggler {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:778px) {
+    .desktop-toggler {
+        display: none;
+    }
+    .tablet-toggler {
+        display: inline-block;
+    }
+    .PersonPanel .dropdown > .dropdown-button:after {
+        display: none;
+    }
+}
